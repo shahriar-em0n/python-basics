@@ -77,3 +77,26 @@ print(first_name + last_name) # without space
 first_name = "Mohammad"  
 last_name = "Shahriar"
 print(first_name +" "+ last_name) # with space
+
+
+# type convertion
+
+age = 20
+message = "My age is " + str(age)
+print(message)
+
+city = "Chittagong"
+temp = 13
+weather_report = "The temp in" + " "+ city + " is " + str(temp) + " " + "Degrees"
+print(weather_report)
+
+
+new_report = f"The Temp in {city} is {temp} degrees"
+
+print(new_report)
+
+a , b = 5, 10
+print(f"the sum of {a} and {b} is {a + b}")
+
+# This is a curly brace: {} -- print thsi
+print(f"This is a curly brace: {{}}")
