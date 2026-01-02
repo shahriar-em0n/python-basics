@@ -2,8 +2,11 @@
 
 str1 = "Shahriar"
 
-#  s   h   a   h   r   i   a   r
-# [0] [1] [2] [3] [4] [5] c[6] [7]  <--position of index
+''' 
+String:  s   h   a   h   r   i   a   r
+Index:  [0] [1] [2] [3] [4] [5] [6] [7]  <--position of index
+Neg idx:-7  -6  -5  -4  -3  -2  -1  -0  
+'''
 
 print(str1)
 
@@ -136,4 +139,128 @@ print("apple" == "apple")
 print("apple" == "Apple")
 print("apple" == "orange")
 print("apple" != "orange")
+print("a" < "b")
+print("apple" < "banana")
+print("apple" < "Banana")
+print("apple" > "Apple")
+print("apple" < "ape")
 
+# print ascii
+
+print(ord('p'))
+print(ord('a'))
+
+print(chr(97))
+
+
+# String Indexing and slicing
+# string[start:end]
+# start - inclusive
+# end - exclusive
+
+text = "Python"
+slice = text[0:4]
+ 
+# print(text[0:3])
+print(slice)
+
+language = "Python programming"
+
+# String :  P   y   t   h   o   n  ␠    p   r   o  g  r  a  m  m  i  n  g
+# Index  :  0   1   2   3   4   5   6   7   8   9  10 11 12 13 14 15 16 17
+# Neg    : -18 -17 -16 -15 -14 -13 -12 -11 -10 -9  -8 -7 -6 -5 -4 -3 -2 -1
+
+
+
+Slice1 = language[0:7]
+print("First slicing", Slice1)
+
+Slice1 = language[:7]
+print("First slicing", Slice1)
+
+Slice2 = language[7:18]
+print("Sec slicing - ",Slice2)
+
+Slice2 = language[7:]
+print("Sec slicing - ",Slice2)
+
+# pro index
+
+pro = language[7:10]
+print(pro)
+
+#neg indx pro
+neg_pro = language[-11:-8]
+print("neg pro - ",neg_pro)
+
+#thon
+thon = language[2:6]
+print("Pos thon - ",thon)
+
+neg_thon = language[-16:-11]
+print("neg thon -", neg_thon)
+
+program = language[7:15]
+print("pos - ", program)
+
+neg_program = language[-11:-3]
+print("neg pro - ",neg_program)
+
+# string[start:end : step]
+ 
+ex1 = language[0:6:2]
+print("ex1 - ", ex1)
+
+neg_ex1 = language[-18:-12:2]
+print("Neg - ",neg_ex1)
+
+neg_ex2 = language[:-12:2]
+print("Neg - ",neg_ex2)
+
+
+# reverse string
+
+reverse = language[::-1]
+print(reverse)
+
+
+#Sstring method
+up = language.upper()
+print(up) 
+
+low = language.lower()
+print(low)
+
+txt = "Hello Shahriar How are you"
+cap = txt.title()
+print(cap)
+
+txt2 = "shahriar you are joss"
+capita = txt2.capitalize()
+print(capita) 
+
+space = "       starting space          "
+print(space)
+print(space.strip())
+print(space.lstrip())
+print(space.rstrip())
+
+# find any string
+
+find_string = "Hello Shahriar, Who are you Shahriar"
+print(txt.find("Shahriar")) 
+print(find_string.find("Who", 6))
+
+print(find_string.count("Shahriar")) 
+
+email = "shahriar12gmail.com"
+print(email.find("@"))
+
+email = "shahriar12@gmail.com"
+print(email.find("@"))
+
+replace = text.replace("Python" ,"world")
+print(replace)
+
+banana = "banana banana banana"
+print(banana.replace("banana", "Apple"))
