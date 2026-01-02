@@ -100,3 +100,40 @@ print(f"the sum of {a} and {b} is {a + b}")
 
 # This is a curly brace: {} -- print thsi
 print(f"This is a curly brace: {{}}")
+
+star = "*"
+print((star * 5 + "\n") * 5)
+
+ 
+a = "python" 
+print(a * 0)
+print(a)
+# print(a * -1)
+
+# print pypythonthon
+print("py" * 2 + "thon" * 2)
+
+
+#len
+a = "zython"
+print(len(a))
+
+print(len("Hello\nworld"))
+
+print("heart len is ",len("❤️"))
+print("\u2764")
+print("\uFE0F")
+
+print("\u2764\uFE0F")
+
+
+# string conditon check
+
+msg = "Help!"
+print(len(msg) >= 5)
+
+print("apple" == "apple")
+print("apple" == "Apple")
+print("apple" == "orange")
+print("apple" != "orange")
+
