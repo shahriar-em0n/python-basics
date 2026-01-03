@@ -264,3 +264,123 @@ print(replace)
 
 banana = "banana banana banana"
 print(banana.replace("banana", "Apple"))
+
+text1 = "Python"
+text2 = "Python3"
+text3 = "2222"
+print(text1.isalpha())
+print(text2.isalpha())
+print(text3.isalpha())
+print(text3.isdigit())
+print(text3.isalnum())
+
+text4 = "  \n\t   "
+print(text4.isspace())
+
+
+#startswith endswith
+
+text5 ="Python is amazing"
+print(text5.startswith("Python")) # true
+print(text5.startswith("amazing")) # false
+
+#endswith
+print(text5.endswith("amazing")) #true
+print(text5.endswith("Python")) #false
+
+print(text5.endswith("is", 0, 9))
+
+text6 = "apple, banana, orange, grape"
+print(text6.split(","))
+
+sentence = "Python is fun to learn"
+print(sentence.split(","))
+
+li = ['apple', ' banana', ' orange', ' grape']
+join = ",".join(li)
+print(join)
+
+py = ['Python is fun to learn']
+print("".join(py))
+
+
+#.format() method
+
+My_name = "Shahriar"
+meesage = "Hello, My name is {} and my age is {}".format(My_name, 20)
+msg1 = "Hello, My name is {0} and my age is {1} - {0}".format(My_name, 20)
+print(msg1)
+
+msg2 = "Hello, My name is {p1} and my age is {p2}".format(p1=My_name, p2=20)
+print(msg2)
+
+# old style formatting with % operator
+
+'''
+%s - String (or any object with a string representation)
+%d - Integer
+%f - Float
+%x - Hexadecimal
+%o - Octal
+%.2f - Float with precision(2 decimal place in this example)
+'''
+
+Name = "Alice"
+greeting = "Hello, %s!" %Name
+print(greeting)
+
+age = 10
+message = "I am %d years old."%age
+print(message)
+
+Name = "Shahriar"
+age = 20
+message = "My name is %s and I am %d years old" % (Name, age)
+print(message)
+
+pi = 3.14159
+print("Pi rounded to 2 decimal place : %.2f" %pi)
+
+#String immutability
+
+s = "Hello"
+print("S id : ",id(s), "\nS value: ",s)
+
+s = "M" + s[1:]
+print("S id : ",id(s), "\nS value: ",s)
+
+# Raw string
+
+rs = r"He\nllo"
+print(rs)
+
+File = r"C:\User\shahriar\Documents"
+print(File)
+
+'''
+r"She said, \"Hello\"" # Its working
+r"She said, "HEllo"" # Its not working syntax error
+r"This endswith a \\" # working
+r"This endswith a \\\" # Its not working syntax error
+r"This ends with a \" # # Its not working syntax error
+r"This ends with a \"" # Its working  
+
+Odd \ --> escape closing quote
+Even \ --> dosent escape  closeing quote
+'''
+
+text = "    python programming SKILL        "
+
+text =text.strip()
+
+text = text.title()
+text = text.replace("Skill", "Expertes")
+print(text)
+
+#shortcurt
+
+print(text.strip().title().replace("Skill", "Experties"))
+
+short = "       MY Name is Shahriar         "
+ 
+print(short.strip().title().replace("Shahriar", "Experties"))
