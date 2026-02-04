@@ -1,0 +1,5 @@
+def square():
+    x = 4
+    print(x ** 2)
+ 
+square()
