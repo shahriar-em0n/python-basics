@@ -1,0 +1,11 @@
+with open('016_file/readme.md', 'r') as fileOne:
+    line = fileOne.readline()
+    line2 = fileOne.readline()
+    line3 = fileOne.readline()
+    line4 = fileOne.readline()
+    line5 = fileOne.readline()
+    print(line)
+    print(line2)
+    print(line3)
+    print(line4)
+    print(line5)
