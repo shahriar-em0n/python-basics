@@ -1,7 +1,5 @@
-file1 = open('016_file/readme.md', 'r')
+file = open("016_file/shahriar.txt", "w")
 
-contents = file1.read()
-print(contents)
+file.write("Hi, Shahriar how are you, I will tell you something")
 
-file1.close()
-
+file.close()
